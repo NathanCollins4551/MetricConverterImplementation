@@ -51,7 +51,7 @@ public class Converter {
     }
 
 
-    public double convertWeight(double num, WeightUnit from, WeightUnit to){
+    public static double convertWeight(double num, WeightUnit from, WeightUnit to){
         // base unit = pounds , convert to pounds, then from pounds.
         double base = 0;
         switch(from){
@@ -81,7 +81,7 @@ public class Converter {
         return 0.0;
     }
 
-    public double convertVolume(double num, VolumeUnit from, VolumeUnit to){
+    public static double convertVolume(double num, VolumeUnit from, VolumeUnit to){
         // base unit = Liters , convert to L, then from L.
         double base = 0;
         switch(from){
@@ -115,7 +115,7 @@ public class Converter {
         return 0.0;
     }
 
-    public double convertTime(double num, TimeUnit from, TimeUnit to){
+    public static double convertTime(double num, TimeUnit from, TimeUnit to){
         // base unit = hours , convert to hours, then from hours.
         double base = 0;
         switch(from){
